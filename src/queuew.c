@@ -1,9 +1,6 @@
 #include "queuew.h"
 #include <stdlib.h>
 
-#ifdef QWDEBUG
-#include <stdio.h>
-#endif
 
 struct qw_node {
     void *d;
