@@ -1,0 +1,17 @@
+QUEUEW_SRC_DIR= src
+QUEUEW=queuew
+
+QUEUEW_TEST_DIR= test
+QUEUEWT=queuewt
+
+all: $(QUEUEW) $(QUEUEWT)
+
+$(QUEUEW):
+	$(MAKE) -C $(QUEUEW_SRC_DIR)
+
+$(QUEUEWT):
+	$(MAKE) -C $(QUEUEW_TEST_DIR)
+
+clean:
+	$(MAKE) clean -C $(QUEUEW_SRC_DIR)
+	$(MAKE) clean -C $(QUEUEW_TEST_DIR)
