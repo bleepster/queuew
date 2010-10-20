@@ -1,4 +1,5 @@
 What is this?
 =============
 
-Just a simple _sys/queue.h_ wrapper library for both *BSD and Linux. 
+Just a simple _sys/queue.h_ wrapper library. Tested on FreeBSD 8.0 and
+Debian(Lenny).
