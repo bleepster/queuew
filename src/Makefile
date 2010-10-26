@@ -11,8 +11,5 @@ QUEUEW_SRCS = queuew.c
 all: $(QUEUEW_OBJS)
 	$(CC) $(C_FLAGS) -c $(QUEUEW_SRCS)
 
-#$(QUEUEW_OBJS) : $(QUEUEW_OBJS)
-#	$(CC) $(C_FLAGS) -c $(QUEUEW_SRCS)
-
 clean:
 	$(RM) -f $(QUEUEW_OBJS)
