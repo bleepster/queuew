@@ -7,11 +7,11 @@ QUEUEWT=queuewt
 all: $(QUEUEW) $(QUEUEWT)
 
 $(QUEUEW):
-	$(MAKE) -C $(QUEUEW_SRC_DIR)
+	cd $(QUEUEW_SRC_DIR); make
 
 $(QUEUEWT):
-	$(MAKE) -C $(QUEUEW_TEST_DIR)
+	cd $(QUEUEW_TEST_DIR); make
 
 clean:
-	$(MAKE) clean -C $(QUEUEW_SRC_DIR)
-	$(MAKE) clean -C $(QUEUEW_TEST_DIR)
+	cd $(QUEUEW_SRC_DIR); make clean
+	cd $(QUEUEW_TEST_DIR); make clean
