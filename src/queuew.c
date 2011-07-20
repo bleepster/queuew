@@ -49,7 +49,7 @@ int qw_pop(void *handle, void **data)
        free(node);
     }
 
-    return ((data != NULL) ? 0 : -1);
+    return ((*data != NULL) ? 0 : -1);
 }
 
 
